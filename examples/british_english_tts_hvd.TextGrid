@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 28.212244897959184 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "vowels" 
+        xmin = 0 
+        xmax = 28.212244897959184 
+        intervals: size = 33 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.8651211051017565 
+            text = "" 
+        intervals [2]:
+            xmin = 0.8651211051017565 
+            xmax = 0.9142584793583965 
+            text = "heed" 
+        intervals [3]:
+            xmin = 0.9142584793583965 
+            xmax = 2.5610947855944817 
+            text = " " 
+        intervals [4]:
+            xmin = 2.5610947855944817 
+            xmax = 2.619487770585965 
+            text = "hid" 
+        intervals [5]:
+            xmin = 2.619487770585965 
+            xmax = 4.274321942797047 
+            text = "" 
+        intervals [6]:
+            xmin = 4.274321942797047 
+            xmax = 4.390067161411164 
+            text = "hayed " 
+        intervals [7]:
+            xmin = 4.390067161411164 
+            xmax = 6.108236594205511 
+            text = " " 
+        intervals [8]:
+            xmin = 6.108236594205511 
+            xmax = 6.170660981772675 
+            text = "head" 
+        intervals [9]:
+            xmin = 6.170660981772675 
+            xmax = 7.809596830798305 
+            text = " " 
+        intervals [10]:
+            xmin = 7.809596830798305 
+            xmax = 7.870720710291153 
+            text = "had" 
+        intervals [11]:
+            xmin = 7.870720710291153 
+            xmax = 9.48884843012774 
+            text = " " 
+        intervals [12]:
+            xmin = 9.48884843012774 
+            xmax = 9.560376374215116 
+            text = "hod" 
+        intervals [13]:
+            xmin = 9.560376374215116 
+            xmax = 11.256502108922508 
+            text = " " 
+        intervals [14]:
+            xmin = 11.256502108922508 
+            xmax = 11.369646311387992 
+            text = "hawed" 
+        intervals [15]:
+            xmin = 11.369646311387992 
+            xmax = 13.090384290742815 
+            text = "" 
+        intervals [16]:
+            xmin = 13.090384290742815 
+            xmax = 13.130700041046609 
+            text = "hud" 
+        intervals [17]:
+            xmin = 13.130700041046609 
+            xmax = 14.851762716283256 
+            text = " " 
+        intervals [18]:
+            xmin = 14.851762716283256 
+            xmax = 14.931093708816528 
+            text = "hoed" 
+        intervals [19]:
+            xmin = 14.931093708816528 
+            xmax = 16.69019753863715 
+            text = "   " 
+        intervals [20]:
+            xmin = 16.69019753863715 
+            xmax = 16.733114305089575 
+            text = "hood" 
+        intervals [21]:
+            xmin = 16.733114305089575 
+            xmax = 18.406512755811136 
+            text = "" 
+        intervals [22]:
+            xmin = 18.406512755811136 
+            xmax = 18.471538159526933 
+            text = "who'd" 
+        intervals [23]:
+            xmin = 18.471538159526933 
+            xmax = 20.139052716599334 
+            text = "" 
+        intervals [24]:
+            xmin = 20.139052716599334 
+            xmax = 20.22358574142987 
+            text = "how'd" 
+        intervals [25]:
+            xmin = 20.22358574142987 
+            xmax = 21.92754699417129 
+            text = "" 
+        intervals [26]:
+            xmin = 21.92754699417129 
+            xmax = 22.02898662396793 
+            text = "hoyed" 
+        intervals [27]:
+            xmin = 22.02898662396793 
+            xmax = 23.72514482826348 
+            text = "" 
+        intervals [28]:
+            xmin = 23.72514482826348 
+            xmax = 23.869501224512547 
+            text = "hide" 
+        intervals [29]:
+            xmin = 23.869501224512547 
+            xmax = 25.582468625009653 
+            text = "" 
+        intervals [30]:
+            xmin = 25.582468625009653 
+            xmax = 25.706016892069666 
+            text = "height" 
+        intervals [31]:
+            xmin = 25.706016892069666 
+            xmax = 27.32529708816142 
+            text = "" 
+        intervals [32]:
+            xmin = 27.32529708816142 
+            xmax = 27.37991842728269 
+            text = "ahead" 
+        intervals [33]:
+            xmin = 27.37991842728269 
+            xmax = 28.212244897959184 
+            text = "" 

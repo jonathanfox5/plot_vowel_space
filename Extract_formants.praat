@@ -24,7 +24,7 @@
 #
 # Name of the Textgrid file that you annotated
 # (should also be the name of the Formant object)
-	name$ = "british_english_tts"
+	name$ = "name_of_your_object"
 
 # How many timepoints?
 	num_timepoints = 10

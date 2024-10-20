@@ -3,6 +3,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from chardet import detect as detect_encoding
 
+"""
+Set the input variables here
+
+WORKING_DIRECTORY is the folder where everything is stored. By default, it is the subfolder `data`.
+INPUT_FILENAMES is a list of formant tables that you have exported from Praat. You can add / remove as many lines as you need - it will work fine with just one.
+CHART_FILESNAMES is a list of the files that will be created.
+CHART_TITLES is the title at the top of your charts.
+X_SCALE, Y_SCALE and FIGURE_SIZE can be set to fit all of the data in for your speaker. You may need to tweak these to match your speaker's voice.
+X_SCALE is formant 2 and Y_SCALE is formant 1.
+"""
+
 WORKING_DIRECTORY = r"data"
 INPUT_FILENAMES = [
     "british_english_tts_lexicalset_formants.Table",
@@ -25,8 +36,8 @@ CHART_TITLES = [
     "JF HVD Vowels",
     "JF Lexical Set Vowels",
 ]
-Y_SCALE = (200, 1000)
 X_SCALE = (500, 2500)
+Y_SCALE = (200, 1000)
 FIGURE_SIZE = (20, 8)
 
 
