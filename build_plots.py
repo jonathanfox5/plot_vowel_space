@@ -1,8 +1,9 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+from chardet import detect as detect_encoding
 
-WORKING_DIRECTORY = r"/Users/jonathan/Library/Mobile Documents/com~apple~CloudDocs/Italian/Orthography and Phonology/phonetics_tools/plot_vowel_space/data"
+WORKING_DIRECTORY = r"data"
 INPUT_FILENAMES = [
     "british_english_tts_lexicalset_formants.Table",
     "british_english_tts_hvd_formants.Table",
@@ -31,6 +32,7 @@ FIGURE_SIZE = (20, 8)
 
 def main() -> None:
 
+    # Sanity check on user inputs
     if (len(INPUT_FILENAMES) != len(CHART_FILENAMES)) or (
         len(INPUT_FILENAMES) != len(CHART_TITLES)
     ):
@@ -38,12 +40,18 @@ def main() -> None:
             "The number of items in INPUT_FILENAMES, CHART_FILENAMES and CHART_TITLES does not match"
         )
 
+    # Plot all files specified by user
     for i in range(0, len(INPUT_FILENAMES)):
+        # Paths
         print(f"Processing {INPUT_FILENAMES[i]}")
         input_path = os.path.join(WORKING_DIRECTORY, INPUT_FILENAMES[i])
         output_path = os.path.join(WORKING_DIRECTORY, CHART_FILENAMES[i])
         chart_title = CHART_TITLES[i]
 
+        # Re-encode file to force utf-8
+        reencode_as_utf8(input_path)
+
+        # Plot data
         build_plot(input_path, output_path, chart_title, X_SCALE, Y_SCALE, FIGURE_SIZE)
 
 
@@ -74,15 +82,25 @@ def build_plot(
 
     # Plot each vowel series separately to preserve order
     for grouping, group in df_plot.groupby("vowel"):
+
+        label_text = str(grouping).strip()
+        if label_text == "" or label_text == "None":
+            continue
+
         group = group.sort_values(by="time_index")
-        plt.plot(group["F2s"], group["F1s"], linewidth=3, label=str(grouping))
+        plt.plot(group["F2s"], group["F1s"], linewidth=3, label=label_text)
 
     # Add labels at the start points
     for i in range(len(df_startpt)):
+
+        label_text = str(df_startpt["vowel"].iloc[i]).strip()
+        if label_text == "" or label_text == "None":
+            continue
+
         plt.text(
             df_startpt["F2s"].iloc[i],
             df_startpt["F1s"].iloc[i],
-            df_startpt["vowel"].iloc[i],
+            label_text,
             verticalalignment="bottom",
             horizontalalignment="right",
             fontweight="bold",
@@ -104,6 +122,29 @@ def build_plot(
     plt.legend(loc="upper left")
 
     plt.savefig(output_path, bbox_inches="tight")
+
+
+def reencode_as_utf8(input_path: str):
+    # Based upon https://stackoverflow.com/questions/191359/how-to-convert-a-file-to-utf-8-in-python
+
+    def get_encoding_type(file):
+        with open(file, "rb") as f:
+            rawdata = f.read()
+        return detect_encoding(rawdata)["encoding"]
+
+    temp_path = input_path + ".utf8"
+
+    # Re-encode
+    input_encoding = get_encoding_type(input_path)
+    with open(input_path, "r", encoding=input_encoding) as f, open(
+        temp_path, "w", encoding="utf-8"
+    ) as e:
+        text = f.read()
+        e.write(text)
+
+    # Replace old file with new
+    os.remove(input_path)
+    os.rename(temp_path, input_path)
 
 
 if __name__ == "__main__":
