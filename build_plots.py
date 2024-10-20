@@ -37,7 +37,7 @@ CHART_TITLES = [
     "JF Lexical Set Vowels",
 ]
 X_SCALE = (500, 2500)
-Y_SCALE = (200, 1000)
+Y_SCALE = (100, 1000)
 FIGURE_SIZE = (20, 8)
 
 
