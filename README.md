@@ -1,6 +1,6 @@
 # Description
 
-This script enables a vowel chart to be plotted for a given speaker.
+This script enables a [vowel chart](https://en.wikipedia.org/wiki/IPA_vowel_chart_with_audio) to be plotted for a given speaker.
 
 It is a Python re-implementation of [Listen Lab's make_vowel_space](https://github.com/ListenLab/make_vowel_space/). Functional Changes:
 
@@ -10,10 +10,15 @@ It is a Python re-implementation of [Listen Lab's make_vowel_space](https://gith
 - Made more robust to Praat output issues.
 - Consistent graph scaling to allow comparison across speakers / studies.
 
-Example output:
-![Example Output](examples/british_english_tts_hvd_vowels_small.png)
+An example use case is given below. Comparing the two images, you can very quickly tell that most of my Italian vowels are _very roughly_ in the right place but my `u` vowel is out of place and my `e` vowel has a bit of a glide to it. Note for those comparing their own vowels: the exact frequencies vary depending on the individual speaker's voice and cultural background ([interesting video here](https://www.youtube.com/watch?v=TWRB443YrHI)). Therefore, you should be comparing the relative shape of the chart instead of the exact frequencies.
 
-# Instructions
+My vowels:
+![My vowels](examples/jf_italian_vowels_202410.png)
+
+Standard Italian vowels:
+![Standard Vowels](examples/standard_italian_vowels.png)
+
+# Basic Instructions
 
 1. Download [this repository](https://github.com/jonathanfox5/plot_vowel_space/archive/refs/heads/main.zip) and extract it.
 
@@ -34,7 +39,17 @@ Example output:
 
 8. A `.png` file will have been generated within the `data` directory. If it looks messy, it's very likely that your formant settings are incorrect in Praat or that the TextGrid boundaries need tweaking. Go back to Step 3 and try again!
 
+# Generating chart from formant frequency data
+
+If you have a set of formant frequencies, you can generate a plot without the use of Praat.
+
+1. Open [examples/build_formant_table_from_numbers.xlsx](examples/build_formant_table_from_numbers.xlsx)
+2. Update the frequencies on the sheet `vowel_data`
+3. If you don't have a variance from your dataset, just set this to 50. The purpose is to make sure that there is a visible line since the script plots with markers disabled.
+4. F3 isn't used by the script. It is just included for compatibility with the original `Extract_formants.praat`.
+5. Check the sheet `csv_output` doesn't have any obvious errors and export it to `.csv` with a name of your choice. You can then follow the basic instructions from step 6.
+
 # Other Resources
 
-- Geoff Lindsey's [video](https://www.youtube.com/watch?v=FdldD0-kEcc) on Vowel Space explains the relationship between formant frequency and vowels extremely well.
+- Geoff Lindsey's [video](https://www.youtube.com/watch?v=FdldD0-kEcc) titled "Vowel Space" explains the relationship between formant frequency and vowels extremely well.
 - ListenLab's [channel](https://www.youtube.com/@listenlab_umn) has lots of information on speech acoustics and Praat.
