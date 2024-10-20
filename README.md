@@ -1,13 +1,13 @@
 # Description
 
-This script enables a [vowel chart](https://en.wikipedia.org/wiki/IPA_vowel_chart_with_audio) to be plotted for a given speaker.
+This script enables a [vowel chart](https://en.wikipedia.org/wiki/IPA_vowel_chart_with_audio) to be plotted for a given speaker. It works with both diphthongs and monophthongs.
 
 It is a Python re-implementation of [Listen Lab's make_vowel_space](https://github.com/ListenLab/make_vowel_space/). Functional Changes:
 
 - Updated to allow processing of IPA symbols.
-- Removed the latin abbreviation to IPA in order to make it applicable to a wider range of applications.
-- The functionality to batch process files has also been added.
-- Made more robust to Praat output issues.
+- Removed the latin abbreviation to IPA conversion in order to make it applicable to a wider range of applications.
+- Added the functionality to batch process files.
+- Made the script more robust to Praat output issues.
 - Consistent graph scaling to allow comparison across speakers / studies.
 
 An example use case is given below. Comparing the two images, you can very quickly tell that most of my Italian vowels are _very roughly_ in the right place but my `u` vowel is out of place and my `e` vowel has a bit of a glide to it. Note for those comparing their own vowels: the exact frequencies vary depending on the individual speaker's voice and cultural background ([interesting video here](https://www.youtube.com/watch?v=TWRB443YrHI)). Therefore, you should be comparing the relative shape of the chart instead of the exact frequencies.
