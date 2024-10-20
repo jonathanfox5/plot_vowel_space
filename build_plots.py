@@ -21,6 +21,8 @@ INPUT_FILENAMES = [
     "gl_vowels_formants.Table",
     "jf_hvd_formants.Table",
     "jf_lexicalset_formants.Table",
+    "standard_italian_vowels_formants.Table",
+    "jf_italian_vowels_202410_formants.Table",
 ]
 CHART_FILENAMES = [
     "british_english_tts_lexicalset_vowels.png",
@@ -28,6 +30,8 @@ CHART_FILENAMES = [
     "gl_vowels.png",
     "jf_hvd_vowels.png",
     "jf_lexicalset_vowels.png",
+    "standard_italian_vowels.png",
+    "jf_italian_vowels_202410.png",
 ]
 CHART_TITLES = [
     "British English TTS Lexical Set Vowels",
@@ -35,6 +39,8 @@ CHART_TITLES = [
     "Geoff Lindsey Synthetic Vowels",
     "JF HVD Vowels",
     "JF Lexical Set Vowels",
+    "Standard Italian Vowels",
+    "JF Italian Vowels Oct 2024",
 ]
 X_SCALE = (500, 2500)
 Y_SCALE = (100, 1000)
