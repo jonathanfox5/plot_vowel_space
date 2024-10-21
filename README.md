@@ -33,9 +33,6 @@ The following instructions assume that you have [Praat](https://www.fon.hum.uva.
 
 3. Import your recording or record directly into Praat.
 
-   - If you are doing a recording in English, there are some reference lists in the `data` directory.
-   - It's best to use consistent consonants around the vowels that you are wishing to analyse as different consonants can affect the quality of your vowel in different ways.
-
 4. Within Praat, create a TextGrid and label each of the vowels with a note of your choosing in a single tier. This label could be an IPA symbol, lexical set word or any other unique label that you like. If you are unsure of how to do this, the [tutorial for the original script](https://www.youtube.com/watch?v=BGW8J4cG0qY) is a good place to start.
 
    - [This](examples/example_text_grid.png) is an example of what a labelled vowel in the text grid should look like.
