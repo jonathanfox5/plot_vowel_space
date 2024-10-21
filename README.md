@@ -38,10 +38,11 @@ The following instructions assume that you have [Praat](https://www.fon.hum.uva.
 
 4. Within Praat, create a TextGrid and label each of the vowels with a note of your choosing in a single tier. This label could be an IPA symbol, lexical set word or any other unique label that you like. If you are unsure of how to do this, the [tutorial for the original script](https://www.youtube.com/watch?v=BGW8J4cG0qY) is a good place to start.
 
+   - [This](examples/example_text_grid.png) is an example of what a labelled vowel in the text grid should look like.
+   - While in here, you should check that Praat is highlighting your formants correctly. It's likely that you will have to update the settings.
    - For my own (male) voice, I have mostly been using 4200 Hz, 4 formants and a 0.04s window for my formant settings.
    - My formants for `o` are very close in value and Praat can struggle to separate them. Increasing formants to 5 can fix it at the cost of messing up the higher order formants. Since we only need F1 and F2, that's not an issue for this script.
    - If you are struggling to get good formant tracking, [this video](https://www.youtube.com/watch?v=fsGIecMgTzQ) is a good reference.
-   - [This](examples/example_text_grid.png) is an example of what a labelled vowel in the text grid should look like.
 
 5. In the main Praat window, create a formant object from the sound file.
 
