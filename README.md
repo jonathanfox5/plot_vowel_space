@@ -50,7 +50,7 @@ The following instructions assume that you have [Praat](https://www.fon.hum.uva.
    - Enter the formant settings that you used in the previous step into the window that appears. Hit OK.
    - Rename the new formant object to match the name of your TextGrid.
 
-6. Within Praat, run the `Extract_formants.praat` script within this repository. Make sure to update the following line (that is near the top of the script) to match the name of your TextGrid and Formant objects:
+6. Within Praat, run the `Extract_formants.praat` script (this is one of the files that was included in the zip file that you extracted earlier). Make sure to update the following line (that is near the top of the script) to match the name of your TextGrid and Formant objects, making sure to **keep** the quotation marks:
    `name$ = "name_of_your_object"`
 
 7. Save the generated formant table as a `csv` (comma separated values) file within the `data` subfolder of this repository.
