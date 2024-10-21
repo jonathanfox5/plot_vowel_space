@@ -57,10 +57,10 @@ The following instructions assume that you have [Praat](https://www.fon.hum.uva.
 
 8. Update the paths and settings at the top of `build_plots.py` using a text editor. If you find that parts of your graph are cut off, you will need to tweak the axis scaling variables `X_SCALE` (representing formant 2) and `Y_SCALE` (representing formant 1).
 
-9. Run the python scripts using:
+9. Go back to the terminal / command window that you opened in step 2 (or open a new one in the folder where you extracted the files). Run the python script using:
    `python build_plots.py`
 
-10. A `.png` file will have been generated within the `data` directory. If the chart looks messy, it's very likely that your formant settings are incorrect in Praat or that the TextGrid boundaries need tweaking. Go back to Step 3 and try again!
+10. A `.png` file will be generated within the `data` subfolder. If the chart looks messy, it's very likely that your formant settings are incorrect in Praat or that the TextGrid boundaries need tweaking. Go back to Step 3 and try again!
 
 # Generating chart from formant frequency data
 
