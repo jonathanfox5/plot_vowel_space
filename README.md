@@ -20,7 +20,9 @@ Standard Italian vowels:
 
 # Video Tutorial
 
-Coming soon!
+Click on the image below to view a step-by-step Youtube tutorial. Alternatively, scroll further down this readme for a written guide.
+
+[![Youtube Tutorial](https://img.youtube.com/vi/tb9PQAR_t3Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=tb9PQAR_t3Q)
 
 # Basic Instructions
 
